@@ -1,22 +1,33 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
+// import { SignedIn, UserButton } from '@clerk/nextjs';
+import MobileNav from './MobileNav';
 
-export function Navbar() {
+
+const Navbar = () => {
   return (
-    <nav className="w-full border-b">
-      <div className="flex items-center justify-between h-16 px-4 max-w-7xl mx-auto">
-        <Link href="/" className="font-bold text-xl">
-          Logo
-        </Link>
+    <nav className="flex-between fixed z-50 w-full bg-dark-1 px-6 py-4 lg:px-10">
+      <Link href="/" className="flex items-center gap-1">
+        <Image
+          src="/icons/logo.svg"
+          width={32}
+          height={32}
+          alt="yoom logo"
+          className="max-sm:size-10"
+        />
+        <p className="text-[26px] font-extrabold text-white max-sm:hidden">
+          NexMeet
+        </p>
+      </Link>
+      <div className="flex-between gap-5">
+        {/* <SignedIn>
+          <UserButton afterSignOutUrl="/sign-in" />
+        </SignedIn> */}
 
-        <div className="flex gap-4">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
-        </div>
-
-        <Button>Sign In</Button>
+        <MobileNav />
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;
