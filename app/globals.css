@@ -132,6 +132,27 @@
   .bg-blue-1 {
     background-color: #0e78f9;
   }
+  .bg-hero {
+    background-image: url("/images/hero-background.png");
+  }
+  .text-sky-1 {
+    color: #c9ddff;
+  }
+  .bg-orange-1 {
+    background-color: #ff742e;
+  }
+  .bg-purple-1 {
+    background-color: #830ef9;
+  }
+  .bg-yellow-1 {
+    background-color: #f9a90e;
+  }
+  .glassmorphism {
+    background: rgba(233, 224, 224, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
 }
 
 @layer utilities {
