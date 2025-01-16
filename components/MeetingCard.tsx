@@ -73,7 +73,7 @@ const MeetingCard = ({
                   title: "Link Copied",
                 });
               }}
-              className="bg-dark-4 px-6 mr-4"
+              className="bg-dark-4 px-6 mr-8"
             >
               <Image
                 src="/icons/copy.svg"
