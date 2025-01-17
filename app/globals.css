@@ -159,6 +159,9 @@
   .border-dark-3 {
     border-color: #252a41;
   }
+  .bg-dark-3 {
+    background-color: #252a41;
+  }
 }
 
 @layer utilities {
