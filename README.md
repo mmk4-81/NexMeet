@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NexMeet 🎥💬
 
-## Getting Started
+NexMeet is a **Zoom clone** built with **Next.js** and **React**, designed for video and audio meetings. Users can create meetings, share links, join calls, and interact in real-time. The platform also supports **meeting history** and allows saving meetings for future reference.  
 
-First, run the development server:
+> This project was developed as a university assignment for learning real-time communication and frontend/backend integration.
 
+---
+
+## 🚀 Features
+
+- Create and join **video & audio meetings**
+- Share meeting links with participants
+- **Real-time communication** between users
+- View **meeting history**
+- Save meetings for future access
+- Authentication with **Clerk** for secure login
+- Responsive UI for both desktop and mobile
+
+---
+
+## 🛠️ Key Technologies
+
+- **Next.js 15** - Server-side rendering & React framework  
+- **React 19** - Frontend library for UI components  
+- **Tailwind CSS** - Styling & responsive design  
+- **Clerk** - Authentication & user management  
+- **Stream Video SDK** - Real-time video & audio calls  
+- **Radix UI** - Accessible and composable UI components  
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+![Home Page](public/images/homepage.png)
+
+### Authentication Page (Clerk)
+![Auth Page](public/images/auth-page.png)
+
+### Meeting Page
+![Meeting Page](public/images/meeting-page.png)
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow these steps to run NexMeet locally:
+
+### 1. Clone the repository
 ```bash
+git clone https://github.com/mmk4-81/zoom_clone.git
+cd zoom_clone
+
+2. Install dependencies
+npm install
+
+3. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
